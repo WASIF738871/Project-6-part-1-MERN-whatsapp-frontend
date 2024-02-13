@@ -11,7 +11,7 @@ function Chat({ messages }) {
   const sendMessage = async (e) => {
     e.preventDefault();
 
-    await axios.post("http://localhost:4000/api/v1/messages/new", {
+    await axios.post("https://whatsapp-backend-sr47.onrender.com/api/v1/messages/new", {
       name: "Demo-name",
       message: input,
       createdAt: new Date().toUTCString(),
